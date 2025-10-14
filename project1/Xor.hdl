@@ -11,8 +11,8 @@ CHIP Xor {
     OUT out;
 
     PARTS:
-    Or(a=a, b=b, out=aorb);
-    And(a=a, b=b, out=aandb);
-    Not(in=aandb, out=naandb);
-    And(a=aorb, b=naandb, out=out);
+        Or(a=a, b=b, out=aorb);
+        And(a=a, b=b, out=aandb);
+        Not(in=aandb, out=naandb);
+        And(a=aorb, b=naandb, out=out);
 }

@@ -11,6 +11,6 @@ CHIP And {
     OUT out;
     
     PARTS:
-    Nand(a=a, b=b, out=nab);
-    Not(in=nab, out=out);
+        Nand(a=a, b=b, out=nab);
+        Not(in=nab, out=out);
 }
